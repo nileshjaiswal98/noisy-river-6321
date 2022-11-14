@@ -1,0 +1,81 @@
+.weBelieveMainBox {
+	margin-top: 60px;
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	align-items: center;
+}
+.weBelieveBox {
+	top: 30%;
+	width: 750px;
+	position: absolute;
+	left: 0;
+	right: auto;
+	bottom: auto;
+	padding: 46px;
+	background-color: #fff;
+	text-align: left;
+}
+
+.imageBox {
+	width: 70%;
+}
+
+.healthyMealsMainBox {
+	margin-top: 60px;
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.healthyMealsBox {
+	position: absolute;
+	top: 30%;
+	width: 750px;
+	left: auto;
+	right: 0;
+	bottom: auto;
+	padding: 46px;
+	background-color: #fff;
+	text-align: left;
+}
+
+.healthyMealsBox span {
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.weBelieveMainBox {
+		flex-direction: column;
+		position: static;
+		width: 100%;
+		align-items: center;
+	}
+	.imageBox {
+		width: 100%;
+	}
+	.weBelieveBox {
+		width: 100%;
+		position: static;
+		
+		text-align: center;
+	}
+	.weBelieveBox > button {
+		width: 100%;
+	}
+	.healthyMealsMainBox {
+		flex-direction: column-reverse;
+		position: static;
+		width: 100%;
+		align-items: center;
+	}
+	.healthyMealsBox {
+		width: 100%;
+		position: static;
+		
+		text-align: center;
+	}
+}
